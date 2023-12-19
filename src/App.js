@@ -1,10 +1,10 @@
+import Layout from "./components/layouts/layout";
+
 function App() {
   return (
-    <>
-      <div>header</div>
+    <Layout>
       <div>Hello Iskender!</div>
-      <div>footer</div>
-    </>
+    </Layout>
   );
 }
 
