@@ -1,11 +1,11 @@
+import Layout from "./components/layouts/layout";
+
 function App() {
   return (
-    <>
-      <div>header</div>
-      <div>Hello Iskender! Check again again!</div>
-      <div>footer</div>
-    </>
-  )
+    <Layout>
+      <div>Hello Iskender!</div>
+    </Layout>
+  );
 }
 
-export default App
+export default App;
