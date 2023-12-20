@@ -1,0 +1,36 @@
+.footer {
+  padding: 70px 100px;
+  background-color: #3186c3;
+  display: flex;
+  justify-content: space-between;
+  gap: 85px;
+  color: #e0e0e0;
+  &-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  &-columns {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    &-column {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      font-size: 15px;
+      &_title {
+        color: #fff;
+        font-size: 17px;
+      }
+      &_content {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+      .footer-icons {
+        flex-direction: row;
+      }
+    }
+  }
+}

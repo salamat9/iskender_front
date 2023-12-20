@@ -1,18 +1,85 @@
 .header {
-  padding: 10px 100px;
+  padding: 0 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #3186c3;
   color: #fff;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+
+  &-left {
+    display: flex;
+    &_login {
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-family: 'Gilroy-Medium', sans-serif;
+    }
+    &_address {
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    &_login:hover,
+    &_address:hover {
+      background-color: #3d94d1;
+      cursor: pointer;
+    }
+  }
 
   &-logo {
-    flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
+  }
+
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    &_catalog {
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    &_catalog:hover {
+      background-color: #3d94d1;
+      cursor: pointer;
+    }
+
+    &_notification,
+    &_market {
+      width: 34px;
+      height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &_notification:hover,
+    &_market:hover {
+      background-color: #fff;
+      border-radius: 50%;
+    }
+
+    &_notification:hover {
+      svg {
+        path {
+          fill: #0063a9;
+        }
+      }
+    }
+    &_market:hover {
+      path {
+        stroke: #0063a9;
+      }
+      circle {
+        fill: #0063a9;
+      }
+    }
   }
 }
