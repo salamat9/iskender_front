@@ -1,24 +1,24 @@
 import api from "../../services/api/index"
 
-const categories = {
+const products = {
   state: {
     data: [],
   },
   reducers: {
-    setCategories: (state, payload) => ({
+    setProducts: (state, payload) => ({
       ...state,
       data: payload,
     }),
   },
   effects: (dispatch) => ({
-    async getCategories() {
+    async getProducts(params) {
       const {
         data: { objects },
-      } = await api.get("/api/getCategories")
+      } = await api.get(`/api/getProducts${params}`)
 
-      dispatch.categories.setCategories(objects || [])
+      dispatch.products.setProducts(objects || [])
     },
   }),
 }
 
-export default categories
+export default products
