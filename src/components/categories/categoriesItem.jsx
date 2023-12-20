@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const CategoriesItem = ({ category }) => {
   return (
@@ -6,7 +6,7 @@ const CategoriesItem = ({ category }) => {
       <h3>{category.name}</h3>
       <img src={category.img} alt={category.name} />
     </div>
-  )
-}
+  );
+};
 
-export default CategoriesItem
+export default CategoriesItem;

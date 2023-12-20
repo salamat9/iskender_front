@@ -1,11 +1,9 @@
-import React from 'react'
-import { ReactComponent as ProductDefault } from '../icons/product-default.svg'
-import { ReactComponent as Plus } from '../icons/plus.svg'
-import { ReactComponent as Minus } from '../icons/minus.svg'
+import React from 'react';
+import { ReactComponent as ProductDefault } from '../icons/product-default.svg';
+import { ReactComponent as Plus } from '../icons/plus.svg';
+import { ReactComponent as Minus } from '../icons/minus.svg';
 
 const ProductsItem = ({ product }) => {
-  // let [count, setCount] = useState(999)
-  console.log(product)
   return (
     <div className='products-item'>
       <ProductDefault />
@@ -39,7 +37,7 @@ const ProductsItem = ({ product }) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProductsItem
+export default ProductsItem;
