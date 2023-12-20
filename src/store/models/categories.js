@@ -1,4 +1,4 @@
-import api from "../../services/api/index"
+import api from '../../services/api/index';
 
 const categories = {
   state: {
@@ -14,11 +14,11 @@ const categories = {
     async getCategories() {
       const {
         data: { objects },
-      } = await api.get("/api/getCategories")
+      } = await api.get('/api/getCategories');
 
-      dispatch.categories.setCategories(objects || [])
+      dispatch.categories.setCategories(objects || []);
     },
   }),
-}
+};
 
-export default categories
+export default categories;

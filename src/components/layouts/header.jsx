@@ -1,11 +1,11 @@
-import React from 'react'
-import LogoSmall from '../icons/logoSmall'
-import CatalogIcon from '../icons/catalogIcon'
-import NotificationIcon from '../icons/notificationIcon'
-import { ReactComponent as ProfileSVG } from '../icons/profile.svg'
-import { ReactComponent as TriangleDown } from '../icons/triangle-down.svg'
-import { ReactComponent as Location } from '../icons/location.svg'
-import { ReactComponent as Market } from '../icons/market.svg'
+import React from 'react';
+import LogoSmall from '../icons/logoSmall';
+import CatalogIcon from '../icons/catalogIcon';
+import NotificationIcon from '../icons/notificationIcon';
+import { ReactComponent as ProfileSVG } from '../icons/profile.svg';
+import { ReactComponent as TriangleDown } from '../icons/triangle-down.svg';
+import { ReactComponent as Location } from '../icons/location.svg';
+import { ReactComponent as Market } from '../icons/market.svg';
 
 const Header = () => {
   return (
@@ -41,7 +41,7 @@ const Header = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

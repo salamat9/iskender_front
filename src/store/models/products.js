@@ -1,4 +1,4 @@
-import api from "../../services/api/index"
+import api from '../../services/api/index';
 
 const products = {
   state: {
@@ -14,11 +14,11 @@ const products = {
     async getProducts(params) {
       const {
         data: { objects },
-      } = await api.get(`/api/getProducts${params}`)
+      } = await api.get(`/api/getProducts${params}`);
 
-      dispatch.products.setProducts(objects || [])
+      dispatch.products.setProducts(objects || []);
     },
   }),
-}
+};
 
-export default products
+export default products;

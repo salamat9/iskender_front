@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import CategoriesItem from './categoriesItem'
+import React, { useEffect, useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import CategoriesItem from './categoriesItem';
 
 const Categories = () => {
-  const [sortedCategories, setSortedCategories] = useState([])
+  const [sortedCategories, setSortedCategories] = useState([]);
+  const categories = useSelector((state) => state.categories.data);
   const {
     categories: { getCategories },
-  } = useDispatch()
-  const categories = useSelector((state) => state.categories.data)
+  } = useDispatch();
 
   useEffect(() => {
-    getCategories()
-  }, [])
+    getCategories();
+  }, []);
 
   useEffect(() => {
     setSortedCategories(
       categories.filter((category) => category.img !== '').slice(0, 14)
-    )
-  }, [categories])
+    );
+  }, [categories]);
 
   return (
     <div className='categories container'>
@@ -32,7 +32,7 @@ const Categories = () => {
           ))}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Categories
+export default Categories;

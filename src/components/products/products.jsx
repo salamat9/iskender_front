@@ -1,21 +1,21 @@
-import React, { useEffect } from 'react'
+import React, { useEffect } from 'react';
 
 // Import css files
-import Slider from 'react-slick'
-import { useDispatch, useSelector } from 'react-redux'
-import ProductsItem from './productsItem'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+import Slider from 'react-slick';
+import { useDispatch, useSelector } from 'react-redux';
+import ProductsItem from './productsItem';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 export default function Products() {
   const {
     products: { getProducts },
-  } = useDispatch()
-  const products = useSelector((state) => state.products.data)
+  } = useDispatch();
+  const products = useSelector((state) => state.products.data);
 
   useEffect(() => {
-    getProducts('?bestseller=true&page=1')
-  }, [])
+    getProducts('?bestseller=true&page=1');
+  }, []);
 
   var settings = {
     dots: true,
@@ -24,7 +24,7 @@ export default function Products() {
     slidesToShow: 5,
     slidesToScroll: 1,
     arrows: true,
-  }
+  };
 
   return (
     <div className='products container'>
@@ -38,5 +38,5 @@ export default function Products() {
         ))}
       </Slider>
     </div>
-  )
+  );
 }

@@ -1,7 +1,7 @@
-import React from 'react'
-import { ReactComponent as Logo } from '../icons/Logo.svg'
-import { ReactComponent as Insta } from '../icons/insta.svg'
-import { ReactComponent as Facebook } from '../icons/facebook.svg'
+import React from 'react';
+import { ReactComponent as Logo } from '../icons/Logo.svg';
+import { ReactComponent as Insta } from '../icons/insta.svg';
+import { ReactComponent as Facebook } from '../icons/facebook.svg';
 
 const Footer = () => {
   return (
@@ -63,7 +63,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
