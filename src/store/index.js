@@ -1,5 +1,14 @@
 import { init } from "@rematch/core";
+import createLoadingPlugin from '@rematch/loading';
+import categories from "./models/categories";
 
-const store = init({});
+const loadingPlugin = createLoadingPlugin();
+
+const store = init({
+  plugins: [loadingPlugin],
+  models: {
+    categories,
+  },
+});
 
 export default store;

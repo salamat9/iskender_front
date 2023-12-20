@@ -14,7 +14,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    "prettier/prettier": "error",
+    // "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
   },
