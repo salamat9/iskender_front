@@ -9,7 +9,7 @@ import { ReactComponent as Market } from '../icons/market.svg';
 
 const Header = () => {
   return (
-    <div className='background'>
+    <div className='header-background'>
       <div className='header container'>
         <div className='header-left'>
           <div className='header-left_login'>
