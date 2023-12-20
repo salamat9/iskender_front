@@ -4,6 +4,7 @@ import categories from './models/categories';
 import products from './models/products';
 import stories from './models/stories';
 import branches from './models/branches';
+import news from './models/news';
 
 const loadingPlugin = createLoadingPlugin();
 
@@ -14,6 +15,7 @@ const store = init({
     products,
     stories,
     branches,
+    news,
   },
 });
 
