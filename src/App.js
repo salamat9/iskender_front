@@ -1,13 +1,12 @@
-import Layout from "./components/layouts/layout";
-import Categories from "./components/categories/categories";
+import Layout from './components/layouts/layout'
+import Main from "./pages/Main"
 
 function App() {
   return (
     <Layout>
-      <Categories />
-      <div>Hello Iskender!</div>
+      <Main />
     </Layout>
-  );
+  )
 }
 
-export default App;
+export default App
