@@ -1,5 +1,11 @@
+import Categories from '../components/categories/categories'
+
 function Main() {
-  return <div>Hello Iskender!</div>
+  return (
+    <div>
+      <Categories />
+    </div>
+  )
 }
 
 export default Main
