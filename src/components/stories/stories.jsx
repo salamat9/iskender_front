@@ -17,7 +17,6 @@ const Stories = () => {
   };
 
   const handleSelect = (story) => {
-    console.log(story);
     setStory(story);
   };
 
