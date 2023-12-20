@@ -1,11 +1,14 @@
-import Categories from '../components/categories/categories'
+import React from 'react';
+import Stories from '../components/stories/stories';
+import Categories from '../components/categories/categories';
 
 function Main() {
   return (
-    <div>
+    <>
+      <Stories />
       <Categories />
-    </div>
-  )
+    </>
+  );
 }
 
-export default Main
+export default Main;
