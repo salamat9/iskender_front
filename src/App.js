@@ -1,11 +1,12 @@
-import Layout from "./components/layouts/layout";
+import Layout from './components/layouts/layout'
+import Main from "./pages/Main"
 
 function App() {
   return (
     <Layout>
-      <div>Hello Iskender!</div>
+      <Main />
     </Layout>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,7 +1,8 @@
-import React from 'react';
+import React from 'react'
 
 const NotificationIcon = () => (
   <svg
+    className='notification-svg'
     width='28'
     height='26'
     viewBox='0 0 28 26'
@@ -25,6 +26,6 @@ const NotificationIcon = () => (
       </g>
     </g>
   </svg>
-);
+)
 
-export default NotificationIcon;
+export default NotificationIcon
