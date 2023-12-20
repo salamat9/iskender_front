@@ -1,5 +1,14 @@
+import React from 'react';
+import Stories from '../components/stories/stories';
+import Categories from '../components/categories/categories';
+
 function Main() {
-  return <div>Hello Iskender!</div>
+  return (
+    <>
+      <Stories />
+      <Categories />
+    </>
+  );
 }
 
-export default Main
+export default Main;
