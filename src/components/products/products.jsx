@@ -7,14 +7,14 @@ import ProductsItem from './productsItem';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function Products({ title }) {
+export default function Products({ title, query }) {
   const {
     products: { getProducts },
   } = useDispatch();
   const products = useSelector((state) => state.products.data);
 
   useEffect(() => {
-    getProducts('?bestseller=true&page=1');
+    getProducts(query);
   }, []);
 
   var settings = {
@@ -22,7 +22,7 @@ export default function Products({ title }) {
     infinite: true,
     speed: 500,
     slidesToShow: 5,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
     arrows: true,
   };
 
