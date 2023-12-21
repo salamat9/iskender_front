@@ -4,6 +4,7 @@
     margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
+    align-items: end;
     h2 {
       font-family: 'Gilroy-Semibold', sans-serif;
       color: #000;
@@ -14,6 +15,11 @@
       font-family: 'Gilroy-Semibold', sans-serif;
       font-size: 16px;
       cursor: pointer;
+      border-bottom: 1px solid transparent;
+    }
+    &_right:hover {
+      // text-decoration: underline;
+      border-bottom: 1px solid #3186c3;
     }
   }
 
@@ -33,6 +39,7 @@
     flex: 1 0 calc(14% - 8px);
     min-width: calc(14% - 8px);
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
 
     h3 {
       font-family: 'Gilroy-Medium', sans-serif;
@@ -55,5 +62,9 @@
       max-height: 100px;
       border-radius: 0 0 10px 10px;
     }
+  }
+  &-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
   }
 }
