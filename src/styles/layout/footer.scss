@@ -1,10 +1,41 @@
 .background {
-  background: linear-gradient(358deg, #005896 1.68%, #62B3EC 98.03%);
+  position: relative;
+  background: linear-gradient(358deg, #005896 1.68%, #62b3ec 98.03%);
+  .ellipse1,
+  .ellipse2,
+  .ellipse3,
+  .ellipse4,
+  .ellipse5,
+  .ellipse6,
+  .ellipse7 {
+    position: absolute;
+  }
+
+  .ellipse2 {
+    left: 21%;
+  }
+  .ellipse3 {
+    top: 45px;
+    left: 34%;
+  }
+  .ellipse4 {
+    left: 42%;
+  }
+  .ellipse5 {
+    right: 20%;
+  }
+  .ellipse6 {
+    top: 7px;
+    right: 11%;
+  }
+  .ellipse7 {
+    right: 0;
+  }
 }
 
 .footer {
   padding: 70px 0px;
-  background: linear-gradient(358deg, #005896 1.68%, #62B3EC 98.03%);
+  background: linear-gradient(358deg, #005896 1.68%, #62b3ec 98.03%);
   display: flex;
   justify-content: space-between;
   gap: 85px;
@@ -37,7 +68,7 @@
         flex-direction: column;
         gap: 15px;
       }
-      
+
       .footer-icons {
         flex-direction: row;
       }

@@ -2,10 +2,38 @@ import React from 'react';
 import { ReactComponent as Logo } from '../icons/Logo.svg';
 import { ReactComponent as Insta } from '../icons/insta.svg';
 import { ReactComponent as Facebook } from '../icons/facebook.svg';
+import { ReactComponent as Ellipse1 } from '../icons/ellipse1.svg';
+import { ReactComponent as Ellipse2 } from '../icons/ellipse2.svg';
+import { ReactComponent as Ellipse3 } from '../icons/ellipse3.svg';
+import { ReactComponent as Ellipse4 } from '../icons/ellipse4.svg';
+import { ReactComponent as Ellipse5 } from '../icons/ellipse5.svg';
+import { ReactComponent as Ellipse6 } from '../icons/ellipse6.svg';
+import { ReactComponent as Ellipse7 } from '../icons/ellipse7.svg';
 
 const Footer = () => {
   return (
     <div className='background'>
+      <div className='ellipse1'>
+        <Ellipse1 />
+      </div>
+      <div className='ellipse2'>
+        <Ellipse2 />
+      </div>
+      <div className='ellipse3'>
+        <Ellipse3 />
+      </div>
+      <div className='ellipse4'>
+        <Ellipse4 />
+      </div>
+      <div className='ellipse5'>
+        <Ellipse5 />
+      </div>
+      <div className='ellipse6'>
+        <Ellipse6 />
+      </div>
+      <div className='ellipse7'>
+        <Ellipse7 />
+      </div>
       <div className='footer container'>
         <div className='footer-logo'>
           <a href=''>
