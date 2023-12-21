@@ -7,15 +7,32 @@ import ProductsItem from './productsItem';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function Products({ title, query }) {
+export default function Products({ title, bestseller, promoProduct }) {
   const {
-    products: { getProducts },
+    products: { getProducts, getBestsellers, getPromoProducts },
   } = useDispatch();
-  const products = useSelector((state) => state.products.data);
+  const { data, bestsellers, promoProducts } = useSelector(
+    (state) => state.products
+  );
+  let products = [];
+
+  if (bestseller) {
+    products = bestsellers;
+  } else if (promoProduct) {
+    products = promoProducts;
+  } else {
+    products = data;
+  }
 
   useEffect(() => {
-    getProducts(query);
-  }, []);
+    if (bestseller) {
+      getBestsellers();
+    } else if (promoProduct) {
+      getPromoProducts();
+    } else {
+      getProducts();
+    }
+  }, [bestseller, promoProduct]);
 
   var settings = {
     dots: false,

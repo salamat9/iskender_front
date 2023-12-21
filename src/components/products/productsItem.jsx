@@ -12,7 +12,7 @@ const ProductsItem = ({ product }) => {
           <Heart />
         </div>
         {product.image !== null ? (
-          <img src={product.img} alt={product.name} />
+          <img src={product.image} alt={product.name} />
         ) : (
           <ProductDefault />
         )}

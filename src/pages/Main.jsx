@@ -10,9 +10,9 @@ function Main() {
     <>
       <Stories />
       <Categories />
-      <Products title='Хит продаж' query='?bestseller=true&page=1&main=true' />
+      <Products title='Хит продаж' bestseller />
       <News />
-      <Products title='Акционные товары' query='?promo=true&page=1&main=true' />
+      <Products title='Акционные товары' promoProduct />
       <Branches />
     </>
   );
