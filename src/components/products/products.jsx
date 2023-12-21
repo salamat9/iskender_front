@@ -7,7 +7,7 @@ import ProductsItem from './productsItem';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-export default function Products() {
+export default function Products({ title }) {
   const {
     products: { getProducts },
   } = useDispatch();
@@ -18,7 +18,7 @@ export default function Products() {
   }, []);
 
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -29,7 +29,7 @@ export default function Products() {
   return (
     <div className='products container'>
       <div className='products-title'>
-        <h2>Хит продаж</h2>
+        <h2>{title}</h2>
         <div className='categories-title_right'>перейти в католог</div>
       </div>
       <Slider {...settings}>

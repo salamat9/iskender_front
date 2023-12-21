@@ -33,12 +33,44 @@
     flex: 1 0 calc(14% - 8px);
     min-width: calc(14% - 8px);
     box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+
+    &_imgdiv {
+      position: relative;
+
+      .heart {
+        padding: 6px 6px 0 6px;
+        border-radius: 5px;
+        background: var(--Transparent-white, rgba(255, 255, 255, 0.5));
+        position: absolute;
+        right: 10px;
+        top: 10px;
+      }
+      .heart:hover {
+        background: var(--lightest-main-color, #d7eefe);
+      }
+    }
 
     h3 {
       font-family: 'Gilroy-Medium', sans-serif;
       color: #1a1919;
       font-size: 14px;
+      height: 34px;
+      overflow-y: hidden;
     }
+
+    .redPrice {
+      color: #f00;
+      margin-right: 10px;
+    }
+
+    .discountPrice {
+      font-family: 'Gilroy-Regular', sans-serif;
+      color: #808080;
+      font-size: 16px;
+      text-decoration-line: line-through;
+    }
+
     h2 {
       font-size: 18px;
       font-family: 'Gilroy-Heavy', sans-serif;
@@ -63,8 +95,69 @@
 
     &_bottom {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
+      .quantity {
+        width: 88px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .quantity:hover {
+        border-radius: 1000px;
+        border: 1px solid #dfdfdf;
+      }
+      svg:hover {
+        border-radius: 1000px;
+        rect {
+          fill: white;
+        }
+      }
+      .mathDiv {
+        height: 44px;
+      }
+      .mathDiv:hover {
+        border-radius: 10000px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
     }
   }
+  &-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Тень по всему периметру div */
+  }
+}
+
+.slick-slide {
+  padding: 0 5px;
+}
+
+.slick-arrow {
+  width: 30px;
+  height: 30px;
+}
+
+.slick-arrow::before {
+  font-size: 30px;
+  color: transparent;
+}
+
+.slick-prev {
+  left: -40px;
+  background: url('../../components/icons/arrow-left.svg');
+}
+.slick-prev:hover,
+.slick-prev:focus {
+  background: url('../../components/icons/arrow-left.svg');
+}
+
+.slick-next {
+  right: -30px;
+  background: url('../../components/icons/arrow-right.svg');
+}
+
+.slick-next:hover,
+.slick-next:focus {
+  background: url('../../components/icons/arrow-right.svg');
 }

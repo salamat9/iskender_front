@@ -10,8 +10,9 @@ function Main() {
     <>
       <Stories />
       <Categories />
+      <Products title='Хит продаж' />
       <News />
-      <Products />
+      <Products title='Акционные товары' />
       <Branches />
     </>
   );
